@@ -4,7 +4,7 @@ let thickness = 13;
 let amplitude = 100;
 
 function setup() {
-	createCanvas(1300, 300);
+	createCanvas(3000, 300);
 }
 
 function draw() {
@@ -15,7 +15,7 @@ function draw() {
 
 	let startX = 0;
 	let endX = width;
-
+	// blendMode(MULTIPLY);
 	for (let i = startX; i <= endX; i++) {
 		let lineY = sin(i * frequency + t) * amplitude;
 		let lineY2 = sin(i * frequency + t - 200) * amplitude;
